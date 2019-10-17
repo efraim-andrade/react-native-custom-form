@@ -121,11 +121,12 @@ export default function Form({inputs, type, schema, buttonText}) {
 
 Form.defaultProps = {
   schema: {},
+  type: '',
 };
 
 Form.propTypes = {
   schema: PropTypes.shape(),
-  type: PropTypes.string.isRequired,
+  type: PropTypes.string,
   buttonText: PropTypes.string.isRequired,
   inputs: PropTypes.arrayOf(PropTypes.shape()).isRequired,
 };
